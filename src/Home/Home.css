@@ -1,0 +1,17 @@
+.banner{
+background-image:url("https://firebasestorage.googleapis.com/v0/b/spotifay-ddec4.appspot.com/o/gorillas.jpg?alt=media&token=2da69fb3-3f73-4c35-aa11-f2b755ebe904") ;
+
+background-position: center;
+
+background-size:cover  ;
+background-attachment: fixed;
+padding: 30%;
+
+
+
+
+}
+
+.letra{font-size: x-small;inline-size: 0px;}
+
+#carouselExampleControls{width: 50%;height: 40%;}

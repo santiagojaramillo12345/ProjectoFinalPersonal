@@ -1,5 +1,6 @@
 import "./Home.css"
-
+import "../shared/Footer/Footer"
+import { Footer } from "../shared/Footer/Footer"
 export function Home(){
 
 return(
@@ -55,7 +56,7 @@ return(
                         <div class="col-12 col-md-4 " >
 
 
-<img src="https://firebasestorage.googleapis.com/v0/b/spotifay-ddec4.appspot.com/o/noticia2.jpg?alt=media&token=e24ab6b0-6dc7-49a8-9c28-7fdc980c5217" />
+<img src="https://firebasestorage.googleapis.com/v0/b/spotifay-ddec4.appspot.com/o/noticia2.jpg?alt=media&token=e24ab6b0-6dc7-49a8-9c28-7fdc980c5217" class="img-fluid w-100" />
 
 
 
@@ -65,7 +66,7 @@ return(
 <div class="col-12 col-md-4 " >
 
 
-<img src="https://firebasestorage.googleapis.com/v0/b/spotifay-ddec4.appspot.com/o/noticia3.jpg?alt=media&token=ed33b842-b44b-4471-ad9a-5fecab83667f" alt=""  class="img-fluid w-100 carouselExampleControls" />
+<img src="https://firebasestorage.googleapis.com/v0/b/spotifay-ddec4.appspot.com/o/noticia3.jpg?alt=media&token=ed33b842-b44b-4471-ad9a-5fecab83667f" alt=""  class="img-fluid w-100" />
 
 
 
@@ -79,10 +80,11 @@ return(
 </section>
 
 
-
+<Footer/>
 
 </>
 )
+
 
 }
 

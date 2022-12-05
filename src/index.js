@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Menu } from './shared/Menu/Menu';
-import { Home } from './Home/Home';
+
+import { BrowserRouter } from "react-router-dom"
+import { Rutas } from './routes/Rutas';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <Menu/>
-    <Home/>
+    <BrowserRouter>
+      <Rutas/>
+    </BrowserRouter>
   </React.StrictMode>
 );
+
+//token de acceso a git hub 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
+

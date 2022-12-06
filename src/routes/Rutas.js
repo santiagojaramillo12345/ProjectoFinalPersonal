@@ -7,6 +7,7 @@ import { Integrantes } from "../shared/Integrantes";
 import { Music } from "../shared/Music";
 import { Albunes } from "../shared/Albunes";
 import { Casa } from "../shared/Menu/Casa";
+import { Mercancia } from "../shared/Mercancia";
 
 export function Rutas(){
     
@@ -21,6 +22,7 @@ export function Rutas(){
                 <Route path="/music" element={<Music />}/>
                 <Route path="/albunes" element={<Albunes />}/>
                 <Route path="/casa" element={<Casa />}/>
+                <Route path="/mercancia" element={<Mercancia />}/>
             </Routes>
     </>
 

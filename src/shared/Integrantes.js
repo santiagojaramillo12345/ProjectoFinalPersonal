@@ -1,14 +1,95 @@
+import { Footer } from "./Footer/Footer";
 export function Integrantes(){
+
+    let titulo = "Integrantes de la banda...";
+    let integrantes = [
+
+{nombre:"Dammon",
+foto:"https://firebasestorage.googleapis.com/v0/b/spotifay-ddec4.appspot.com/o/Damon_Integrante.jpg?alt=media&token=5e98dca4-6a36-4b60-8242-2e1ebea5fac0",
+biografia:"Damon Albarn (pronunciado /ˈdeɪmən_ˈælbɑrn/; Londres, 23 de marzo de 1968) es un músico, cantante, compositor y productor de discos británico, líder y letrista principal de la banda de rock Blur y como cofundador, vocalista principal, instrumentista y compositor principal de la banda virtual Gorillaz  Criado en Leytonstone, East London, y alrededor de Colchester, Essex, Albarn asistió a Stanway School, donde conoció al guitarrista Graham Coxon y formaron Blur, lanzando su álbum debut Leisure en 1991"
+
+
+
+}
+,
+{
+    
+    nombre:"Jamie Hewlett",
+foto:"https://firebasestorage.googleapis.com/v0/b/spotifay-ddec4.appspot.com/o/Jamie_Hewlett.jpg?alt=media&token=0c00b638-0b85-4bc3-b4ba-6c650726e59e",
+biografia:"Mientras estudiaba en la Northbrook College en Worthing al oeste de Sussex, Inglaterra; Hewlett, Alan Martin y un compañero estudiante llamado Philip Bond crearon un fanzine llamada Atomtan. Esto atrajo la atención de Brett Ewins. Después de dejar la universidad, Hewlett y Martin fueron invitados por Ewins a crear un nuevo material para una nueva revista que él estaba creando junto a Steve Dillon en 1988.1​2​ La revista se llamó Deadline y creaba una mezcla de tiras cómicas producidas por creadores británicos y artículos basados en música y cultura. Martin y Hewlett crearon Tank Girl, una serie de cómic anarquista sobre una chica punk que manejaba un tanque y que tenía a un canguro mutante como novio. La tira fue un éxito instantáneamente y rápidamente se convirtió en la sección más comentada de Deadline. El raro estilo de Hewlett se tornó popular y empezó a trabajar con bandas como Senseless Things y Cud, proveyendo portadas para los discos de estas."
+
+}
+
+
+
+
+
+
+,
+{nombre:"Mike Smith",
+foto:"https://firebasestorage.googleapis.com/v0/b/spotifay-ddec4.appspot.com/o/Mike_Smith.jpg?alt=media&token=8becc493-1580-4487-a9c3-0f4034eccfaa",
+biografia:"Traducción del inglés-Mike Smith es un músico inglés. Adquirió experiencia como músico de estudio, tocando y haciendo giras con The Brand New Heavies. Smith es miembro de la banda en vivo de Gorillaz, siendo el único otro miembro constante en vivo desde el debut de la banda, el otro es el cofundador y cantante Damon Albarn."}]
+
+
+
+
 
 
 return(
 
 <>
 
-<h1>Integrantes Cargando ....</h1>
+<h1>Integrantes de la banda ...</h1>
+
+<div class="container">
+        <div class="row row-cols-1 row-cols-md-7 g-5">
+          {integrantes.map(function (integrante) {
+            return (
+              <>
+               
+
+                    <div class="card h-100 shadow"> 
+                            
+                    <div class="col-12 col-md-4 ">
+
+                    <div class="row"> 
+                    <div class="col-12 text-center">
+        <h1>{integrante.nombre}</h1>
+        <hr></hr>
+    </div>
+                    
+                    
+                    </div>
 
 
-</>
+                    </div>
+
+                    
+                            
+                    
+                    </div>
+
+
+                
+                    <div class="row">
+                                <div class="col-3 text-end">
+                                    <img class="" src={integrante.foto}></img>
+                                </div>
+                                <div class="col-9 text-start align-self-center">
+                                    <h3 class="fw-bold">{integrante.biografia}</h3>
+                                    
+                                </div>
+                            </div>
+
+
+
+              </>
+            );
+          })}
+        </div>
+      </div>
+      <Footer/>
+    </>
 
 
 )

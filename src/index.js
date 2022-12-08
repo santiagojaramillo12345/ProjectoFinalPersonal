@@ -15,5 +15,5 @@ root.render(
   </React.StrictMode>
 );
 
-//token de acceso a git hub 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
+
 

@@ -1,4 +1,5 @@
 import { Footer } from "./Footer/Footer";
+import "./Integrantes.css"
 export function Integrantes(){
 
     let titulo = "Integrantes de la banda...";
@@ -16,7 +17,7 @@ biografia:"Damon Albarn (pronunciado /ˈdeɪmən_ˈælbɑrn/; Londres, 23 de mar
     
     nombre:"Jamie Hewlett",
 foto:"https://firebasestorage.googleapis.com/v0/b/spotifay-ddec4.appspot.com/o/Jamie_Hewlett.jpg?alt=media&token=0c00b638-0b85-4bc3-b4ba-6c650726e59e",
-biografia:"Mientras estudiaba en la Northbrook College en Worthing al oeste de Sussex, Inglaterra; Hewlett, Alan Martin y un compañero estudiante llamado Philip Bond crearon un fanzine llamada Atomtan. Esto atrajo la atención de Brett Ewins. Después de dejar la universidad, Hewlett y Martin fueron invitados por Ewins a crear un nuevo material para una nueva revista que él estaba creando junto a Steve Dillon en 1988.1​2​ La revista se llamó Deadline y creaba una mezcla de tiras cómicas producidas por creadores británicos y artículos basados en música y cultura. Martin y Hewlett crearon Tank Girl, una serie de cómic anarquista sobre una chica punk que manejaba un tanque y que tenía a un canguro mutante como novio. La tira fue un éxito instantáneamente y rápidamente se convirtió en la sección más comentada de Deadline. El raro estilo de Hewlett se tornó popular y empezó a trabajar con bandas como Senseless Things y Cud, proveyendo portadas para los discos de estas."
+biografia:"Mientras estudiaba en la Northbrook College en Worthing al oeste de Sussex, Inglaterra; Hewlett, Alan Martin y un compañero estudiante llamado Philip Bond crearon un fanzine llamada Atomtan. Esto atrajo la atención de Brett Ewins. Después de dejar la universidad, Hewlett y Martin fueron invitados por Ewins a crear un nuevo material para una nueva revista que él estaba creando junto a Steve Dillon en 1988.1​2​ La revista se llamó Deadline y creaba una mezcla de tiras cómicas producidas por creadores británicos y artículos basados en música y cultura."
 
 }
 
@@ -39,7 +40,9 @@ return(
 
 <>
 
-<h1>Integrantes de la banda ...</h1>
+
+
+<h1 className="center">INTEGRANTES DE LA BANDA</h1>
 
 <div class="container">
         <div class="row row-cols-1 row-cols-md-7 g-5">
@@ -48,38 +51,25 @@ return(
               <>
                
 
-                    <div class="card h-100 shadow"> 
-                            
-                    <div class="col-12 col-md-4 ">
-
-                    <div class="row"> 
-                    <div class="col-12 text-center">
-        <h1>{integrante.nombre}</h1>
-        <hr></hr>
-    </div>
-                    
-                    
-                    </div>
-
-
-                    </div>
-
                     
                             
+                    <div class="col-12 col-md-6 ">
+                  
                     
+                    
+                            <h1>{integrante.nombre}</h1>
+                            <img class="imagen" src={integrante.foto}></img> 
                     </div>
+              
 
-
-                
-                    <div class="row">
-                                <div class="col-3 text-end">
-                                    <img class="" src={integrante.foto}></img>
-                                </div>
-                                <div class="col-9 text-start align-self-center">
+                                <div class="col-12 col-md-6 ">
+                                <h1 className="center">biografia</h1>
                                     <h3 class="fw-bold">{integrante.biografia}</h3>
                                     
                                 </div>
-                            </div>
+
+                                
+                            
 
 
 
@@ -96,4 +86,3 @@ return(
 
 
 }
-//jjosegallegocesde/reactmiercoles

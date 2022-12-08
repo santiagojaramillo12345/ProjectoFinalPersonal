@@ -41,6 +41,10 @@ export function Casa(){
                         <i className="bi bi-instagram fs-1 me-2"></i>
                         <h4 className="mt-5">Todos los derechos reservados</h4>
 
+
+
+                        
+
                     </div>
                 </div>
 

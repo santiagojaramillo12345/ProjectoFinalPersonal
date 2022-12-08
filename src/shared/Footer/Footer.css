@@ -1,2 +1,3 @@
-.pie{background-color: black;}
-.colorBlack{color: black;}
+*{padding: 0;margin: 0;}
+.pie{background-color: black;width:100%}
+.colorBlack{color: black;  ;}

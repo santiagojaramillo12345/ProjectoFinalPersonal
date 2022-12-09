@@ -66,7 +66,7 @@ export function Home() {
                                 </div>
                                 <div class="col-9 text-start align-self-center">
                                     <h3 class="fw-bold">Med</h3>
-                                    <h5>Dec 2</h5>
+                                    <h5>Dec 7</h5>
                                 </div>
                             </div>
 
@@ -78,8 +78,8 @@ export function Home() {
                                     <i class="bi bi-vinyl-fill icono fw-bold"></i>
                                 </div>
                                 <div class="col-9 text-start align-self-center">
-                                    <h3 class="fw-bold">Cali</h3>
-                                    <h5>Dec 3</h5>
+                                    <h3 class="fw-bold">Colombia</h3>
+                                    <h5>nov 3</h5>
                                 </div>
                             </div>
 
@@ -106,7 +106,7 @@ export function Home() {
 
                         <div class="col-12 col-md-12">
                             <iframe
-                                width="560"
+                                width="700px"
                                 height="315"
                                 src="https://www.youtube.com/embed/1V_xRb0x9aw"
                                 title="YouTube video player"
@@ -114,11 +114,15 @@ export function Home() {
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen
                             ></iframe>
-                            <h5 class="Noticia">Noticias</h5>
+                           
                         </div>
+                        <div class="col-12 col-md-12 bg-dark agrandar">  <h5 class="Noticia">Noticias</h5></div>
                     </div>
                 </div>
             </section>
+
+
+
 
             <br />
             <br />
@@ -130,7 +134,10 @@ export function Home() {
                     <div class="row">
                         <div class="col-12 col-md-4 ">
 
-                                <h1>Lo nuevo de Gorillaz, Pixies, Beyoncé, Christina </h1>
+                                <h1>Lo nuevo de Gorillaz, </h1>
+                                <h1> Pixies, </h1>
+                                <h1>  Beyoncé,</h1>
+                                <h1>    Christina   </h1>
 
                             <img
                                 src="https://firebasestorage.googleapis.com/v0/b/spotifay-ddec4.appspot.com/o/noticia2.jpg?alt=media&token=e24ab6b0-6dc7-49a8-9c28-7fdc980c5217"
@@ -145,7 +152,10 @@ export function Home() {
                         </div>
                         <div class="col-12 col-md-4 ">
 
-                                <h1>Netflix pone en marcha una película de Gorillaz</h1>
+                                <h1>Netflix</h1>
+                                <h1>pone en marcha</h1>
+                                <h1> una película</h1> 
+                                <h1> de Gorillaz</h1>
 
                             <img
                                 src="https://firebasestorage.googleapis.com/v0/b/spotifay-ddec4.appspot.com/o/gorillazNoticia.jpg?alt=media&token=8e661d50-abe4-4a4e-a48f-e097c2ea6099"
@@ -155,10 +165,13 @@ export function Home() {
 
                             <p>En 1998 el exintegrante de Blur Damon Albarn se unió al artista Jamie Hewlett para fundar una banda virtual. Esto es, un grupo compuesto por miembros animados (concretamente 2-D, Noodle, Murdoc Niccals y Russel Hobbs) que publicaban sus canciones a través de videoclips extremadamente elaborados, cuyo riesgo e inventiva llevan ya dos décadas encandilando al público. A través de temazos como Clint Eastwood o Feel Good Inc., Gorillaz se las ha apañado para mantenerse en el candelero sin músicos de carne y hueso, y este mismo año publicó su último disco, Song Machine: Season One. Lanzamiento que se ha visto acompañado por un anuncio llamado a cambiar la historia de la banda.
 
-                                Y es que, tal y como Albarn ha comentado en un podcast de Apple Music del que se hace eco Collider, estos días se encuentra trabajando en un próximo largometraje de Gorillaz. Uno para el que, además, cuenta con la financiación de Netflix. “Estamos haciendo una película de Gorillaz con Netflix. Esta tarde tenemos una sesión de escritura en Malibú”, explica el músico, para a continuación dedicarle unas palabras bastante llamativas al gigante de streaming teniendo en cuenta que es él quien está poniendo el dinero. “Es algo que he querido hacer durante mucho, mucho tiempo. Pero Netflix, no sé. El modo en que lo controlan todo ahora…”.</p>
+                                Y es que, tal y como Albarn ha comentado en un podcast de Apple Music del que se hace eco Collider, estos días se encuentra trabajando en un próximo largometraje de Gorillaz. Uno para el que, además, cuenta con la financiación de Netflix. “Estamos haciendo una película de Gorillaz con Netflix.</p>
                         </div>
                         <div class="col-12 col-md-4 ">
-                            <h1>Gorillaz y Noel Gallagher cierran con luces y sombras el Bilbao </h1>
+                            <h1>Gorillaz y Noel</h1>
+                            <h1>     Gallagher cierran </h1>
+                            <h1>     con luces y sombras</h1> 
+                            <h1>    el Bilbao </h1>
                             <img
                                 src="https://firebasestorage.googleapis.com/v0/b/spotifay-ddec4.appspot.com/o/noticia3.jpg?alt=media&token=ed33b842-b44b-4471-ad9a-5fecab83667f"
                                 alt=""

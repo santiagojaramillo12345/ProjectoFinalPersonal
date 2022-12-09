@@ -19,6 +19,8 @@ padding: 30%;
 
 .menu{background-color: rgb(10, 49, 49);}
 
-.Noticia{padding: 50px;font-weight: 500px; text-align: center;font-style: normal;}
+.Noticia{padding: 50px;font-weight: 500px; text-align: center;font-size: 50px;color: aliceblue;}
 
 .foto{width: 150px; height: 300px;}
+
+.agrandar{width: 100vh;}

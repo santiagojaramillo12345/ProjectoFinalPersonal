@@ -1,6 +1,32 @@
 import { Footer } from "./Footer/Footer";
+import { useNavigate } from "react-router-dom";
+
+
 export function Mercancia() {
+  
+
+ //activamos la navegacion entre componentes
+ let navegante=useNavigate()
+
+  //que hagp cuando activo el evento
+  function dectetarEvento(productoSelecionado){
+
+navegante("/ampliarinfo",{
+  state:{productoSelecionado}
+})
+
+
+
+
+ 
+
+  }
+  
+  
   let titulo = "producto de la banda...";
+   
+   
+   
   let productos = [
     {
       nombre: "Disquete",
@@ -37,29 +63,45 @@ export function Mercancia() {
   return (
     <>
      
-      <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 g-5">
-          {productos.map(function (producto) {
+      <div className="container">
+        <div className="row row-cols-1 row-cols-md-3 g-5">
+          {productos.map(function (producto,id) {
             return (
-              <>
-                <div class="col">
+              <div key={id}>
+                <div className="col">
 
-                    <div class="card h-100 shadow"> 
+                    <div className="card h-100 shadow"> 
+
+
+                    
                             
                             <h1>{producto.nombre}</h1>
-                            <img src={producto.foto} alt=" " class="h-100 img-fluid w-100"/>
+                            <img src={producto.foto} alt=" " className="h-100 img-fluid w-100"/>
                             <p>Precio ${producto.precio}</p>
                             
+                            
+                            <button className="btn btn-primary mx-3 mb-3" onClick={
+                             
+                             
+                        
+                             
+                             
+                             function(){
+                                dectetarEvento(producto)
+                              }
+                            }>Ampliar</button>
                     
                     </div>
 
 
                 </div>
-              </>
+              </div>
             );
           })}
         </div>
       </div>
+      <Footer />
     </>
   );
 }
+//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 

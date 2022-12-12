@@ -45,10 +45,10 @@ export function Integrantes() {
 
 
 
-      <h1 className="center">INTEGRANTES DE LA BANDA</h1>
+      <h1 classNameName="center">INTEGRANTES DE LA BANDA</h1>
 
-      <div class="container">
-        <div class="row row-cols-1 row-cols-md-7 g-5">
+      <div className="container">
+        <div className="row row-cols-1 row-cols-md-7 g-5">
           {integrantes.map(function (integrante) {
             return (
               <>
@@ -56,18 +56,18 @@ export function Integrantes() {
 
 
 
-                <div class="col-12 col-md-6 ">
+                <div className="col-12 col-md-6 ">
 
 
 
                   <h1>{integrante.nombre}</h1>
-                  <img class="imagen" src={integrante.foto}></img>
+                  <img className="imagen" src={integrante.foto}></img>
                 </div>
 
 
-                <div class="col-12 col-md-6 ">
-                  <h1 className="center">biografia</h1>
-                  <h3 class="fw-bold">{integrante.biografia}</h3>
+                <div className="col-12 col-md-6 ">
+                  <h1 classNameName="center">biografia</h1>
+                  <h3 className="fw-bold">{integrante.biografia}</h3>
 
                 </div>
 

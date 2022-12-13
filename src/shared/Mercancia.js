@@ -1,5 +1,6 @@
 import { Footer } from "./Footer/Footer";
 import { useNavigate } from "react-router-dom";
+import "./Mercancia.css"
 
 
 export function Mercancia() {
@@ -31,32 +32,39 @@ navegante("/ampliarinfo",{
     {
       nombre: "Disquete",
       foto: "https://firebasestorage.googleapis.com/v0/b/spotifay-ddec4.appspot.com/o/1gorillax-album.jpg?alt=media&token=f4deb0ed-924f-4bbf-87ad-143eecea5421",
-      precio: 40,
+      precio: 40000,
+      Descripcion:"Es un disquete que contiene 30 canciones diferentes de gorillaz"
     },
     {
-      nombre: "Post",
-      foto: "https://firebasestorage.googleapis.com/v0/b/spotifay-ddec4.appspot.com/o/5gorillax-album.jpg?alt=media&token=ad4bd301-59d0-4870-a02c-20782daa4488",
-      precio: 20,
+      nombre: "Camisa",
+      foto: "https://firebasestorage.googleapis.com/v0/b/spotifay-ddec4.appspot.com/o/Camisa_Gorillaz.jpg?alt=media&token=e5a891da-6f82-4886-8d27-51d79695c786",
+      precio: 20000,
+      Descripcion:"Camisa 100% original talla S,L,XL"
     },
     {
-      nombre: "post",
-      foto: "https://firebasestorage.googleapis.com/v0/b/spotifay-ddec4.appspot.com/o/6gorillax-album.jpg?alt=media&token=cf68907e-c1ce-4cfd-92d7-af3d03f2498c",
-      precio: 10,
+      nombre: "Mochila",
+      foto: "https://firebasestorage.googleapis.com/v0/b/spotifay-ddec4.appspot.com/o/Gorillax_mochila.jpg?alt=media&token=9be666c4-3895-4152-b558-e0ceb328fb02",
+      precio: 10000,
+      Descripcion: "DESDE 1984 SIEMPRE CON LA MUSICAALMAGRO (CAPITAL FEDERAL) - SANTA TERESITA (PDO. COSTA) MATERIAL: DE CORDURASUBLIMADATAMAÑO: 30 cm DE ANCHO X 42 cm DE Mochila  mediana congran resistencia a objetos pesados "
     },
     {
-      nombre: "post",
-      foto: "https://firebasestorage.googleapis.com/v0/b/spotifay-ddec4.appspot.com/o/Album-gosillax2.jpg?alt=media&token=b9b3f06d-0518-4415-81bd-720e5a4a56ef",
-      precio:40,
+      nombre: "Saco",
+      foto: "https://firebasestorage.googleapis.com/v0/b/spotifay-ddec4.appspot.com/o/Saco_Gorillax.png?alt=media&token=2eee6539-547a-48e1-8eb5-4c37f7a6414e",
+      precio:40000,
+      Descripcion:"Saco original de agodon talla S,L,XL,M"
     },
     {
-      nombre: "post",
-      foto: "https://firebasestorage.googleapis.com/v0/b/spotifay-ddec4.appspot.com/o/gorillas.jpg?alt=media&token=2da69fb3-3f73-4c35-aa11-f2b755ebe904",
-      precio: 20,
+      nombre: "Figura",
+      foto: "https://firebasestorage.googleapis.com/v0/b/spotifay-ddec4.appspot.com/o/figura.jpg?alt=media&token=75844fff-10aa-4b2b-bc4d-33edb9c40853",
+      precio: 20000,
+      Descripcion: "Figura de plastico de 30 cm de gorillaz"
     },
     {
       nombre: "post",
       foto: "https://firebasestorage.googleapis.com/v0/b/spotifay-ddec4.appspot.com/o/gorillax-album.jpg?alt=media&token=d9aca177-64b1-4d92-99a5-d8813674f4c6",
-      precio: 20,
+      precio: 20000
+      ,
+      Descripcion:"Estepost biene conlafirmaautografiada de el  cantante"
     },
   ];
 
@@ -76,8 +84,8 @@ navegante("/ampliarinfo",{
                     
                             
                             <h1>{producto.nombre}</h1>
-                            <img src={producto.foto} alt=" " className="h-100 img-fluid w-100"/>
-                            <p>Precio ${producto.precio}</p>
+                            <img src={producto.foto} alt=" " className=".imagen"/>
+                            
                             
                             
                             <button className="btn btn-primary mx-3 mb-3" onClick={

@@ -70,25 +70,31 @@ navegante("/ampliarinfo",{
 
   return (
     <>
-     
+     <br/>
       <div className="container">
-        <div className="row row-cols-1 row-cols-md-3 g-5">
+        <div className="row row-cols-1 row-cols-md-3 g-5 ">
           {productos.map(function (producto,id) {
             return (
               <div key={id}>
                 <div className="col">
 
-                    <div className="card h-100 shadow"> 
+                    <div className="col-12 col-md-12 card h-100 shadow"> 
 
 
-                    
+                    <div className="col-12 col-md-12 center "> 
                             
                             <h1>{producto.nombre}</h1>
-                            <img src={producto.foto} alt=" " className=".imagen"/>
+
+                            </div>
+                            <div className="col-12 col-md-12 center "> 
+
+                            <img src={producto.foto} alt=" " className="imagen"/>
                             
+                    </div>
                             
-                            
-                            <button className="btn btn-primary mx-3 mb-3" onClick={
+                    <div className="col-12 col-md-12  center"> 
+
+                            <button className="btn btn-primary mx-3 mb-3 t " onClick={
                              
                              
                         
@@ -98,6 +104,8 @@ navegante("/ampliarinfo",{
                                 dectetarEvento(producto)
                               }
                             }>Ampliar</button>
+
+</div>
                     
                     </div>
 
@@ -108,6 +116,8 @@ navegante("/ampliarinfo",{
           })}
         </div>
       </div>
+<br/>
+
       <Footer />
     </>
   );

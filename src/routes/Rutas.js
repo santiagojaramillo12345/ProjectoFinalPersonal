@@ -4,7 +4,7 @@ import { Menu } from '../shared/Menu/Menu';
 import { Home } from '../Home/Home';
 import { Historia } from "../Historia/Historia";
 import { Integrantes } from "../shared/Integrantes";
-import { Music } from "../shared/Music";
+import {Music} from "../Music/Music"      
 import { Albunes } from "../shared/Albunes";
 import { Casa } from "../shared/Menu/Casa";
 import { Mercancia } from "../shared/Mercancia";

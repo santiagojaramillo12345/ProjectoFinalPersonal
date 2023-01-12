@@ -3,12 +3,17 @@ import { Route, Routes } from "react-router-dom"
 import { Menu } from '../shared/Menu/Menu';
 import { Home } from '../Home/Home';
 import { Historia } from "../Historia/Historia";
-import { Integrantes } from "../shared/Integrantes";
 import {Music} from "../Music/Music"      
-import { Albunes } from "../shared/Albunes";
 import { Casa } from "../shared/Menu/Casa";
-import { Mercancia } from "../shared/Mercancia";
-import { Ampliarinfo } from "../shared/Ampliarinfo";
+
+import {Integrantes} from "../Integrantes/Integrantes"
+
+import {Albunes} from "../Albunes/Albunes"
+
+import {Mercancia} from "../Mercacia/Mercancia"
+
+import {Ampliarinfo} from "../Ampliarinfo/Ampliarinfo"
+
 export function Rutas(){
     
     return (

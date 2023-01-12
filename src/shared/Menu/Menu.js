@@ -27,9 +27,7 @@ export function Menu() {
             <li className="nav-item">
               <Link id="titulo" className="nav-link" to="albunes ">Albunes</Link>
             </li>
-            <li className="nav-item">
-              <Link id="titulo" className="nav-link " to="casa">Casa</Link>
-            </li>
+            
             <li className="nav-item">
               <Link id="titulo" className="nav-link " to="mercancia">Mercancia</Link>
             </li>

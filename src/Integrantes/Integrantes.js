@@ -1,4 +1,4 @@
-import { Footer } from "./Footer/Footer";
+import { Footer } from "../shared/Footer/Footer";
 import "./Integrantes.css"
 export function Integrantes() {
 

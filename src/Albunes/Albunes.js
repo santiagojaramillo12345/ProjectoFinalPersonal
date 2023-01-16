@@ -1,3 +1,5 @@
+import { servicioAlbum } from "../services/ServicioAlbum"
+
 export function Albunes(){
 
     return(
@@ -5,5 +7,5 @@ export function Albunes(){
         <h1>Cargando Album ...</h1>
     )
 
-
+ console.log(servicioAlbum)
 }

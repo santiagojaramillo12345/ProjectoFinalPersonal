@@ -13,7 +13,7 @@ const URL="https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ/top-tracks?
 
 const request={ 
     method:"GET",
-    headers:{Authorization:"Bearer BQB_tsfSCe6umnR3GU5j4vAQT2SgDbRna5W144UKJ2mt4vtEcSlqrx7Oi3IIFR-1xxEBUN_gBIUv095MZNNeD9Pcp74P--llmV9qNly8a2LPqB8zW3hscYlZsQ-EDvXMAHaNvq9q-aG3TcD6SJ4DoNTNM0r91Ch1NjlcUQHl3cT1Jp20On1b4MVqygdgyqXZnlI"}
+    headers:{Authorization:"Bearer BQBFimUt_BptdHDgAiha4dYaWBXMzIbIt9ex0XIsjYac_T3JAh9GNbdkWKgKer1kDjYflaytPixBiw9IlGEQ-9x0tCmC02_o4s2eMWLrdOH1J2YvCfA3vnWbhka4A5sZA1XJcexZS4J-TgChYJ6YI1CKSVwIAOniB6PDdJRX5e7IajIhBuqhTCneXPHmXsUXCZY"}
 }
 
 //3. nos vamos pal restaurante 

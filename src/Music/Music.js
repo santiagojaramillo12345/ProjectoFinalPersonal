@@ -1,5 +1,7 @@
 import { servicioCancionesTop } from "../services/servicioCancionesTop"
 import { useState, useEffect } from "react"
+import "./Music.css"
+import { Footer } from "../shared/Footer/Footer";
 
 export function Music() {
 
@@ -38,38 +40,55 @@ export function Music() {
     return (
 
       <>
-        <h2>
+        <h2 className="centrar" >
 
           canciones de la banda:
 
         </h2>
-
+<br></br>
+       
+<div className="container">    
+       
+<div className="row row-cols-1 row-cols-md-2 g-5 ">
         {
           canciones.tracks.map(function (cancion) {
 
-            {console.log(cancion.album.images[0].url)}
+            {console.log(cancion
+              )}
 
             return (
 
+
+              
               <div className="col">
 
                     <div className="col-12 col-md-12 card h-100 shadow">
+<br></br>
+
+                    <div className="col-12 col-md-12 center "><img className="imagen" src={cancion.album.images[0].url}></img></div>
+
+                        <div className="col-12 col-md-8 center"><h1>{cancion.name}</h1></div>
 
 
-                    <div className="col-12 col-md-12 center ">
-                      
-                    <img src={cancion.album.images[0].url}></img>
-
-
-                       </div>
+                        
+                        <div className="col-12 col-md-8 center"><audio controls src={cancion.preview_url}></audio></div>
 
 
 
-
-
+                        <div className="col-12 col-md-8 center"> <p>Popularidad : {cancion.popularity}</p> </div>
 
 
                    </div>
+
+
+                  
+                  
+                   
+
+
+
+
+                   
 
               </div>
 
@@ -83,6 +102,11 @@ export function Music() {
           })
         }
 
+</div>
+</div>
+
+<Footer />
+
       </>
 
     )
@@ -91,17 +115,3 @@ export function Music() {
 
 }
 
-/*
-
-              <div>
-
-                <h1>{cancion.name}</h1>
-
-                <audio controls src={cancion.preview_url}></audio>
-                <img src={cancion.album.images[0].url}></img>
-              
-              </div>
-
-
-
-*/

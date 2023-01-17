@@ -1,4 +1,4 @@
-//receta para consumir api
+/*//receta para consumir api
 export async function servicioAlbum(){
 
 //1. pa done vas y aquevas
@@ -31,4 +31,4 @@ return(album)
 console.log(album)
 
 
-}
+}*/

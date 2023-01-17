@@ -1,4 +1,4 @@
-import { servicioAlbum } from "../services/ServicioAlbum"
+//import { servicioAlbum } from "../services/ServicioAlbum"
 
 export function Albunes(){
 
@@ -7,5 +7,5 @@ export function Albunes(){
         <h1>Cargando Album ...</h1>
     )
 
- console.log(servicioAlbum)
+ //console.log(servicioAlbum)
 }

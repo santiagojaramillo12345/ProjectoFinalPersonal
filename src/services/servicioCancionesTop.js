@@ -1,7 +1,9 @@
 //receta para consumir un api con react 
-
+import {generarToken} from "./servicioToken"
 export async function servicioCancionesTop(){
 
+
+    let token=await generarToken()
 
 //1. pa done vas y aquevas
 //Escribir la url del servicio del api
@@ -13,7 +15,7 @@ const URL="https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ/top-tracks?
 
 const peticion={ 
     method:"GET",
-    headers:{Authorization:"Bearer BQBFimUt_BptdHDgAiha4dYaWBXMzIbIt9ex0XIsjYac_T3JAh9GNbdkWKgKer1kDjYflaytPixBiw9IlGEQ-9x0tCmC02_o4s2eMWLrdOH1J2YvCfA3vnWbhka4A5sZA1XJcexZS4J-TgChYJ6YI1CKSVwIAOniB6PDdJRX5e7IajIhBuqhTCneXPHmXsUXCZY"}
+    headers:{Authorization:token}
 }
 
 //3. nos vamos pal restaurante 

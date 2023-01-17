@@ -81,10 +81,6 @@ export function Integrantes() {
           })}
         </div>
       </div>
-
-
-
-
       <Footer />
     </>
 

@@ -17,8 +17,5 @@ export async function generarToken(){
 
     let token=await respuesta.json()
 
-    let tokenDefinitivo=token.token_type+" "+token.acces_token
-
-return(tokenDefinitivo)
-    
+    return(token.token_type+" "+token.access_token)
 }
